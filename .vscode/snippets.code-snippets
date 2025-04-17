@@ -1,5 +1,4 @@
 {
-	// Place your área de trabajo de mqn snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
 	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
 	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
 	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
@@ -18,7 +17,6 @@
 	"Interface": {
 		"prefix": "interface",
 		"description": "Interface",
-		"scope": "fortran",
 		"body": [
 			"interface",
 			"\t\t$1",
@@ -28,7 +26,6 @@
 	"Simple function": {
 		"prefix": "fun1",
 		"description": "Simple function",
-		"scope": "fortran",
 		"body": [
 			"double precision function $1(x) result(retval)",
 			"\timplicit none",
@@ -40,7 +37,6 @@
 	"Double function": {
 		"prefix": "fun2",
 		"description": "Double function",
-		"scope": "fortran",
 		"body": [
 			"double precision function $1(x, y) result(retval)",
 			"\timplicit none",
@@ -52,7 +48,6 @@
 	"Interface simple function": {
 		"prefix": "ifunc",
 		"description": "Interface simple function",
-		"scope": "fortran",
 		"body": [
 			"double precision function $1(x) ",
 			"\timplicit none",
@@ -63,7 +58,6 @@
 	"Interface double function": {
 		"prefix": "ifunc2",
 		"description": "Interface double function",
-		"scope": "fortran",
 		"body": [
 			"double precision function $1(x, y) ",
 			"\timplicit none",
