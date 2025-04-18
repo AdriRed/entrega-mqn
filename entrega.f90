@@ -253,10 +253,10 @@ subroutine calculate_final_properties(length, r, final_psi, local_mu)
    interaction_energy = interaction_energy*step*interaction*0.5d0
    total_energy = kinetic_energy + armonic_potential + interaction_energy  ! Energía total
    print *, "--------- Calculated properties ---------"
-   write(*,'(/5X,"* ener",e12.5,"   average chemical=", e12.5/ &
-   & 5X,"* kin-ener=",e12.5,"     total-pot= ", e12.5,/ &
-   & 5X,"* potho=",E12.4,2X,"     potint =",E12.4/ &
-   & 5x,"* radious =",e12.4, 5x, " radious2 =",e15.7, /)') &
+   write(*,'(/5X,"* total-energy=",e12.5,"   average chemical=", e12.5/ &
+   & 5X,"* kin-ener=",e12.5,"     total potential= ", e12.5,/ &
+   & 5X,"* armoinic potential=",E12.4,2X,"     interaction energy =",E12.4/ &
+   & 5x,"* <r^2> =",e12.4, 5x, " r^2 =",e15.7, /)') &
    total_energy, average_chem_potential, kinetic_energy, (armonic_potential+interaction_energy), &
       armonic_potential, interaction_energy, mean_squared_radius, squared_radius
 
